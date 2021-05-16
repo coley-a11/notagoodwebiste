@@ -135,7 +135,7 @@ The amount of time that one spends working during a semester is likely to impact
 
 Due to this, we will fit an additional mixed effect model that includes the predictors `Sex`, `Hours.Worked` and `Highschool.GPA` as further fixed effects in the above model.
 
-```{r}
+```{r echo=FALSE}
 m2 <- lmer(GPA ~ 1 + Time + Sex + Highschool.GPA + Hours.Worked + (1 + Time| Student), data = df)
 #summary(m2)
 #report(m2, ci = 0.95)

@@ -2270,12 +2270,7 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 <p>The amount of time that one spends working during a semester is likely to impact the GPA that the individual achieves. Furthermore, it may be possible that Sex influences GPA as well as the students leaving GPA from high school.</p>
 <p>Due to this, we will fit an additional mixed effect model that includes the predictors <code>Sex</code>, <code>Hours.Worked</code> and <code>Highschool.GPA</code> as further fixed effects in the above model.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>m2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/lme4/man/lmer.html'>lmer</a></span><span class='op'>(</span><span class='va'>GPA</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>+</span> <span class='va'>Time</span> <span class='op'>+</span> <span class='va'>Sex</span> <span class='op'>+</span> <span class='va'>Highschool.GPA</span> <span class='op'>+</span> <span class='va'>Hours.Worked</span> <span class='op'>+</span> <span class='op'>(</span><span class='fl'>1</span> <span class='op'>+</span> <span class='va'>Time</span><span class='op'>|</span> <span class='va'>Student</span><span class='op'>)</span>, data <span class='op'>=</span> <span class='va'>df</span><span class='op'>)</span>
-<span class='co'>#summary(m2)</span>
-<span class='co'>#report(m2, ci = 0.95)</span>
-</code></pre>
-</div>
+
 </div>
 <p>We fitted a linear mixed model (estimated using REML and nloptwrap optimizer) to predict GPA with Time, Sex, Highschool.GPA and Hours.Worked (formula: GPA ~ 1 + Time + Sex + Highschool.GPA + Hours.Worked). The model included Time and Student as random effects (formula: ~1 + Time | Student). The model’s total explanatory power is substantial (conditional R<sup>2</sup> = 0.71) and the part related to the fixed effects alone (marginal R<sup>2</sup>) is of 0.29. The model’s intercept, corresponding to Time = 0, Sex = 0, Highschool.GPA = 0 and Hours.Worked = 0, is at 2.53 (95% CI [2.34, 2.71], t(1191) = 27.11, <em>p</em> &lt; .001). Within this model:</p>
 <ul>
