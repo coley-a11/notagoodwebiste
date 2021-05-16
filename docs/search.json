@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-05-17T10:35:41+12:00"
+    },
+    {
+      "path": "aboutme.html",
+      "title": "Nicole Thomas",
+      "author": [],
+      "contents": "\n\n          \n          \n          Not a Good Website\n          \n          \n          Home\n          About\n          ☰\n          \n          \n      \n        \n          \n            Nicole Thomas\n          \n          \n            \n              I am currently studying towards by Bachelor of Science w/ Honours in psycholgy at Victoria University of Wellington. My hobbies include exercise, social media, and hating myself.\n            \n            \n              I am currently studying towards by Bachelor of Science w/ Honours in psycholgy at Victoria University of Wellington. My hobbies include exercise, social media, and hating myself.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-05-17T10:35:42+12:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Not a Good Website",
+      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-05-17T10:35:42+12:00"
+    }
+  ],
+  "collections": []
+}
